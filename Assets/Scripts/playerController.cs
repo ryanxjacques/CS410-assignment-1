@@ -11,7 +11,7 @@ public class playerController : MonoBehaviour
     
     private float movementX;
     private float movementY;
-    public float speed = 0;
+    public float speed = 10;
 
     private int jumpCount;
     public float jumpForce = 5f;
@@ -79,7 +79,7 @@ public class playerController : MonoBehaviour
    {
        countText.text =  "Count: " + count.ToString();
 
-        if (count >= 12)
+        if (count >= 8)
         {
             winTextObject.SetActive(true);
         }
